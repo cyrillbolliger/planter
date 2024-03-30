@@ -54,6 +54,7 @@ ORDER BY c.relname
 
 const fkDefSQL = `
 select
+  distinct
   att2.attname as "child_column"
   , cl.relname as "parent_table"
   , att.attname as "parent_column"
